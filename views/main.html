@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이음새</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    
+<body>
+    
+    <header>
+        <img src="/image/logo.png" alt="로고" class="logo">
+        <button class="notification-btn">
+            <img src="/image/mailbox.png" alt="알림 아이콘" class="notification-icon">
+            <span class="notification-count">5</span>
+        </button>
+        <button class="btn">로그아웃</button>
+        <button class="btn">마이페이지</button>
+    </header>
+
+    <div class="container">
+        <div class="profile-section">
+            <img src="/image/profile.png" alt="프로필 사진" class="profile-pic">
+            <h2><span id="username">사용자</span>님의 일기장</h2>
+            <button class="btn">친구 관리</button>
+        </div>
+
+        <div class="diary-section">
+
+            <div class="diary">
+                <img src="" class="user-img" id="userImage">
+                <img src="/image/default-diary.png" alt="일기 노트" class="diary-img" onclick="document.getElementById('upload').click();">
+            </div>
+            <input type="file" id="upload" accept="image/*" hidden>
+
+            <div class="horizontal-rectangle"></div>
+        
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
